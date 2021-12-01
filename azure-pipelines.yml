@@ -8,6 +8,11 @@ trigger:
 
 pool: Default
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+jobs:
+- job: A
+  steps:
+  - script: echo "A"
+
+- job: B
+  steps:
+  - script: echo "B"
